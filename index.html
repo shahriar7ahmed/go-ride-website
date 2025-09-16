@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Go Ride</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans">
+    <!--navbar-->
+    <header class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <h1 class="text-3xl font-bold text-[#E76F51]">Go Ride</h1>
+
+      <!-- Desktop Nav + Button -->
+      <div class="hidden md:flex items-center space-x-6">
+        <nav class="flex space-x-6 font-semibold lg:space-x-8">
+          <a href="#" class="text-gray-700 hover:text-[#E76F51]">Home</a>
+          <a href="#" class="text-gray-700 hover:text-[#E76F51]">Shop</a>
+          <a href="#" class="text-gray-700 hover:text-[#E76F51]">News</a>
+          <a href="#" class="text-gray-700 hover:text-[#E76F51]">Contact</a>
+        </nav>
+        <button
+          class="bg-[#E76F51] text-white px-4 py-2 rounded-md font-semibold hover:bg-orange-700 transition-colors duration-300"
+        >
+          Login
+        </button>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <button
+        id="menu-btn"
+        class="md:hidden text-gray-700 focus:outline-none"
+      >
+        <!-- Icon -->
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          />
+        </svg>
+      </button>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="menu" class="hidden md:hidden bg-gray-100">
+      <nav class="flex flex-col space-y-4 font-semibold px-4 py-6">
+        <a href="#" class="text-gray-700 hover:text-[#E76F51]">Home</a>
+        <a href="#" class="text-gray-700 hover:text-[#E76F51]">Shop</a>
+        <a href="#" class="text-gray-700 hover:text-[#E76F51]">News</a>
+        <a href="#" class="text-gray-700 hover:text-[#E76F51]">Contact</a>
+        <button
+          class="bg-[#E76F51] text-white px-4 py-2 rounded-md font-semibold hover:bg-orange-700 transition-colors duration-300 w-28"
+        >
+          Login
+        </button>
+      </nav>
+    </div>
+
+    <script>
+      const btn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
