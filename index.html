@@ -5,10 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Go Ride</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css"
+      rel="stylesheet"
+      type="text/css"
+    />
   </head>
   <body class="font-sans">
     <!--navbar-->
-    <header class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+    <header
+      class="max-w-[1440px] mx-auto px-4 py-4 flex items-center justify-between"
+    >
       <!-- Logo -->
       <h1 class="text-3xl font-bold text-[#E76F51]">Go Ride</h1>
 
@@ -28,10 +41,7 @@
       </div>
 
       <!-- Mobile Hamburger -->
-      <button
-        id="menu-btn"
-        class="md:hidden text-gray-700 focus:outline-none"
-      >
+      <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
         <!-- Icon -->
         <svg
           class="w-6 h-6"
@@ -63,6 +73,136 @@
         </button>
       </nav>
     </div>
+    <main>
+      <div
+        class="carousel w-full max-w-[1440px] mx-auto mt-8 bg-[rgba(231,111,81,0.1)] rounded-lg px-4 py-4 flex items-center justify-between"
+      >
+        <!-- Slide 1 -->
+        <div id="slide1" class="carousel-item relative w-full">
+          <div
+            class="flex flex-col md:flex-row items-center md:items-start gap-8 px-8 py-12 w-full"
+          >
+            <!-- Left Content -->
+            <div class="flex-1 text-center md:text-left">
+              <h1 class="text-4xl font-bold mb-4">Ride-on R15 V4 with Smile</h1>
+              <p class="text-lg text-gray-600 mb-6">
+                This is a short description about the product. Highlight its
+                features and why users should buy it.
+              </p>
+              <button
+                class="bg-[#E76F51] text-white px-6 py-3 rounded-md font-semibold hover:bg-orange-700 transition-colors duration-300"
+              >
+                Purchase
+              </button>
+            </div>
+            <!-- Right Image -->
+            <div class="flex-1 flex justify-center md:justify-end">
+              <img
+                src="images/slider/bike1.png"
+                alt="Product"
+                class="w-full max-w-md rounded-lg"
+              />
+            </div>
+          </div>
+          <!-- Arrows -->
+          <div class="absolute left-5 right-5 bottom-5 flex justify-between">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div id="slide2" class="carousel-item relative w-full">
+          <div
+            class="flex flex-col md:flex-row items-center md:items-start gap-8 px-8 py-12 w-full"
+          >
+            <div class="flex-1 text-center md:text-left">
+              <h1 class="text-4xl font-bold mb-4">Speed Beast 250cc</h1>
+              <p class="text-lg text-gray-600 mb-6">
+                Experience unmatched speed and control with the ultimate sports
+                bike.
+              </p>
+              <button
+                class="bg-[#E76F51] text-white px-6 py-3 rounded-md font-semibold hover:bg-orange-700 transition-colors duration-300"
+              >
+                Purchase
+              </button>
+            </div>
+            <div class="flex-1 flex justify-center md:justify-end">
+              <img
+                src="images/slider/bike2.png"
+                alt="Product"
+                class="w-full max-w-md rounded-lg"
+              />
+            </div>
+          </div>
+          <div class="absolute left-5 right-5 bottom-5 flex justify-between">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div id="slide3" class="carousel-item relative w-full">
+          <div
+            class="flex flex-col md:flex-row items-center md:items-start gap-8 px-8 py-12 w-full"
+          >
+            <div class="flex-1 text-center md:text-left">
+              <h1 class="text-4xl font-bold mb-4">Classic Ride 125</h1>
+              <p class="text-lg text-gray-600 mb-6">
+                A perfect balance of style and comfort for daily rides.
+              </p>
+              <button
+                class="bg-[#E76F51] text-white px-6 py-3 rounded-md font-semibold hover:bg-orange-700 transition-colors duration-300"
+              >
+                Purchase
+              </button>
+            </div>
+            <div class="flex-1 flex justify-center md:justify-end">
+              <img
+                src="images/slider/bike3.png"
+                alt="Product"
+                class="w-full max-w-md rounded-lg"
+              />
+            </div>
+          </div>
+          <div class="absolute left-5 right-5 bottom-5 flex justify-between">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div id="slide4" class="carousel-item relative w-full">
+          <div
+            class="flex flex-col md:flex-row items-center md:items-start gap-8 px-8 py-12 w-full"
+          >
+            <div class="flex-1 text-center md:text-left">
+              <h1 class="text-4xl font-bold mb-4">Urban Scooter Pro</h1>
+              <p class="text-lg text-gray-600 mb-6">
+                Eco-friendly, sleek, and made for smooth city rides.
+              </p>
+              <button
+                class="bg-[#E76F51] text-white px-6 py-3 rounded-md font-semibold hover:bg-orange-700 transition-colors duration-300"
+              >
+                Purchase
+              </button>
+            </div>
+            <div class="flex-1 flex justify-center md:justify-end">
+              <img
+                src="images/slider/bike4.png"
+                alt="Product"
+                class="w-full max-w-md rounded-lg"
+              />
+            </div>
+          </div>
+          <div class="absolute left-5 right-5 bottom-5 flex justify-between">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <script>
       const btn = document.getElementById("menu-btn");
